@@ -1,25 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { TooltipModule } from './tooltip/tooltip.module';
-import { AppRoutingModule } from './app.routing'; 
-import { AppComponent } from './app.component';
-import { FirstPageComponent } from './first-page.component';
-import { SecondPageComponent } from './second-page.component';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RouterModule } from '@angular/router'
+import { TooltipModule } from 'projects/tooltip/src/public_api'
+import { AppComponent } from './app.component'
+import { AppRoutingModule } from './app.routing'
+import { FirstPageComponent } from './first-page.component'
+import { SecondPageComponent } from './second-page.component'
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FirstPageComponent,
-    SecondPageComponent
-  ],
+  declarations: [AppComponent, FirstPageComponent, SecondPageComponent],
   imports: [
     BrowserModule,
     TooltipModule,
     AppRoutingModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

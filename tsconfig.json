@@ -9,20 +9,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
     "paths": {
-      "ng2-tooltip-directive": [
-        "dist/ng2-tooltip-directive"
-      ],
-      "ng2-tooltip-directive/*": [
-        "dist/ng2-tooltip-directive/*"
-      ]
+      "ng2-tooltip-directive": ["dist/ng2-tooltip-directive"],
+      "ng2-tooltip-directive/*": ["dist/ng2-tooltip-directive/*"],
+      "tooltip": ["dist/tooltip"],
+      "tooltip/*": ["dist/tooltip/*"]
     }
   }
 }
