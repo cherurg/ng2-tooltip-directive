@@ -210,7 +210,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
   }
 
   @HostListener('click', ['$event'])
-  onClick() {
+  onClick(event) {
     if (this.isDisplayOnClick === false) {
       return
     }
